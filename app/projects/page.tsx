@@ -1,0 +1,64 @@
+import IconBar from '../../components/IconBar';
+import ProjectCard, { ProjectData } from '../../components/ProjectCard';
+
+const projects: ProjectData[] = [
+  {
+    icon: '🤖',
+    title: 'Humanoid Facial Robot (Robotics Project I)',
+    subtitle: 'Semester 2 | Grade: 6/6 | Center for Artificial Muscles (CAM), EPFL',
+    description:
+      'Developed an innovative device to replicate facial expressions using dielectric elastomer actuators (DEAs), designed to assist patients with facial paralysis.',
+    highlights: [
+      'Real-time surface EMG signal integration',
+      'Embedded control system design',
+      'STM32 microcontroller programming',
+      'MATLAB and Python implementation',
+    ],
+    outcome:
+      'Successfully built and tested a functional prototype with optimized DEA specifications, demonstrating real-time actuation capabilities.',
+    extra: 'Design and development of a humanoid facial robot.',
+  },
+  {
+    icon: '🧠',
+    title: 'Cognitive Neuroscience Research (Neuro-X Project II)',
+    subtitle: 'Semester 3 | Grade: 5.5/6 | Center for Biomedical Imaging (CIBM), EPFL',
+    description:
+      'Advanced neuroimaging research using functional Magnetic Resonance Spectroscopy to study neurochemical alterations during cognitive tasks.',
+    highlights: [
+      'Advanced fMRS data acquisition and analysis',
+      'Python-based data pipeline development',
+      'Response-time analysis algorithms',
+      'Glutamate quantification methodologies',
+    ],
+    outcome:
+      'Identified significant trends in cognitive processing speed and metabolic dynamics, contributing valuable insights to biomarkers research for cognitive decline.',
+    extra: 'Examining Processing Speed and Glutamate Dynamics in Cognitive Function using 1H fMRS.',
+  },
+  {
+    icon: '👁️',
+    title: 'AI-Driven Glaucoma Screening',
+    subtitle: 'April 2025 | Lemanic Life Sciences Hackathon 2025',
+    description:
+      'Developed an AI-powered system for glaucoma screening from fundus images, demonstrating application of deep learning in ophthalmological diagnostics.',
+    highlights: [],
+    outcome: '',
+  },
+];
+
+export default function ProjectsPage() {
+  return (
+    <main className="flex flex-col items-center min-h-screen px-4 py-12 bg-[#f8f5ee]">
+      <section className="w-full max-w-4xl mx-auto">
+        <h1 className="text-4xl font-extrabold mb-10 text-center">Major Projects</h1>
+        <div className="grid gap-8 md:grid-cols-2">
+          {projects.map((project, idx) => (
+            <ProjectCard key={project.title} project={project} idx={idx} />
+          ))}
+        </div>
+      </section>
+      <div className="mt-16">
+        <IconBar />
+      </div>
+    </main>
+  );
+} 
