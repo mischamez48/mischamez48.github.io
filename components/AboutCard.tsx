@@ -14,7 +14,7 @@ export default function AboutCard() {
       className="max-w-2xl w-full bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl shadow-lg p-8 mb-8 flex flex-col items-center"
     >
       <img
-        src="/profile.png"
+        src="/portfolio/profile.png"
         alt="Mischa Mez"
         className="w-32 h-32 rounded-full shadow-lg border-4 border-white -mt-16 mb-4 object-cover bg-white"
       />
