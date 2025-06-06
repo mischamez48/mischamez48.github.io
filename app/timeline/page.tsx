@@ -57,23 +57,25 @@ const work = [
 
 export default function TimelinePage() {
   return (
-    <main className="flex flex-col items-center min-h-screen px-4 py-12 bg-[#f8f5ee]">
-      <section className="w-full max-w-2xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-10 text-center">Timeline</h1>
-        <h2 className="text-2xl font-bold mb-4 mt-6">Education</h2>
-        <div className="relative ml-6 before:absolute before:left-3 before:top-0 before:bottom-0 before:w-1 before:bg-gray-200">
+    <main className="flex flex-col items-center min-h-screen px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#f8f5ee]">
+      <section className="w-full max-w-3xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 sm:mb-8 lg:mb-10 text-center text-neutral-900">Timeline</h1>
+        <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 mt-4 sm:mt-6 text-neutral-800">Education</h2>
+        <div className="relative ml-4 sm:ml-6 before:absolute before:left-3 before:top-0 before:bottom-0 before:w-1 before:bg-gray-200">
           {education.map((item, idx) => (
             <TimelineItem key={item.title} {...item} idx={idx} />
           ))}
         </div>
-        <h2 className="text-2xl font-bold mb-4 mt-10">Work Experience</h2>
-        <div className="relative ml-6 before:absolute before:left-3 before:top-0 before:bottom-0 before:w-1 before:bg-gray-200">
+        <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 mt-6 sm:mt-8 lg:mt-10 text-neutral-800">Work Experience</h2>
+        <div className="relative ml-4 sm:ml-6 before:absolute before:left-3 before:top-0 before:bottom-0 before:w-1 before:bg-gray-200">
           {work.map((item, idx) => (
             <TimelineItem key={item.title} {...item} idx={idx} />
           ))}
         </div>
       </section>
-      <IconBar />
+      <div className="mt-8 sm:mt-12 lg:mt-16">
+        <IconBar />
+      </div>
     </main>
   );
 } 

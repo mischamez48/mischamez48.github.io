@@ -47,16 +47,16 @@ const projects: ProjectData[] = [
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col items-center min-h-screen px-4 py-12 bg-[#f8f5ee]">
-      <section className="w-full max-w-4xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-10 text-center">Major Projects</h1>
-        <div className="grid gap-8 md:grid-cols-2">
+    <main className="flex flex-col items-center min-h-screen px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#f8f5ee]">
+      <section className="w-full max-w-6xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 sm:mb-8 lg:mb-10 text-center text-neutral-900">Major Projects</h1>
+        <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 lg:grid-cols-2 auto-rows-fr">
           {projects.map((project, idx) => (
             <ProjectCard key={project.title} project={project} idx={idx} />
           ))}
         </div>
       </section>
-      <div className="mt-16">
+      <div className="mt-8 sm:mt-12 lg:mt-16">
         <IconBar />
       </div>
     </main>
