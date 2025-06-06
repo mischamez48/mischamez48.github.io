@@ -34,13 +34,13 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="flex flex-col items-center min-h-screen px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#f8f5ee]">
+    <main className="flex flex-col items-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#f8f5ee]">
       <section className="w-full max-w-4xl mx-auto">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-3 sm:mb-4 text-neutral-900">Let&apos;s Talk</h1>
         <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed">
           I&apos;m actively seeking opportunities to apply my knowledge in neuroscience and robotics to real-world challenges. If you&apos;re looking for a motivated student for internships, thesis collaborations, or have exciting projects to discuss, I&apos;d love to hear from you.
         </p>
-        <form className="bg-white rounded-xl shadow p-4 sm:p-6 lg:p-8 mb-8 sm:mb-10 flex flex-col gap-3 sm:gap-4" onSubmit={handleSubmit} autoComplete="off">
+        <form className="bg-white rounded-xl shadow p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 flex flex-col gap-3 sm:gap-4" onSubmit={handleSubmit} autoComplete="off">
           <input
             type="text"
             name="website"
@@ -87,9 +87,7 @@ export default function ContactPage() {
           {success && <div className="text-green-600 font-medium mt-2 text-sm sm:text-base break-words">{success}</div>}
         </form>
       </section>
-      <div className="mt-4 sm:mt-8">
-        <IconBar />
-      </div>
+      <IconBar />
     </main>
   );
 } 

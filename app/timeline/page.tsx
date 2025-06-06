@@ -57,7 +57,7 @@ const work = [
 
 export default function TimelinePage() {
   return (
-    <main className="flex flex-col items-center min-h-screen px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#f8f5ee]">
+    <main className="flex flex-col items-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#f8f5ee]">
       <section className="w-full max-w-3xl mx-auto">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 sm:mb-8 lg:mb-10 text-center text-neutral-900">Timeline</h1>
         <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 mt-4 sm:mt-6 text-neutral-800">Education</h2>

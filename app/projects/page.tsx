@@ -47,7 +47,7 @@ const projects: ProjectData[] = [
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col items-center min-h-screen px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#f8f5ee]">
+    <main className="flex flex-col items-center px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-[#f8f5ee]">
       <section className="w-full max-w-6xl mx-auto">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 sm:mb-8 lg:mb-10 text-center text-neutral-900">Major Projects</h1>
         <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 lg:grid-cols-2 auto-rows-fr">
