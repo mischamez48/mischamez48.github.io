@@ -18,33 +18,33 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "vibedev.ai",
-  description: "Experience the new way of coding with vibedev.ai. Transform your development workflow and vibe with your code like never before.",
+  title: "M | Mischa Mez",
+  description: "Mischa Mez - MSc Robotics @ EPFL | Neuro-X Minor. Passionate about neuroscience, biomedical imaging, and robotics engineering.",
   icons: {
     icon: [
       {
-        url: "/images/idevibelogo.png",
-        type: "image/png",
-        sizes: "32x32"
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+        sizes: "any"
       },
       {
-        url: "/images/idevibelogo.png",
-        type: "image/png",
-        sizes: "16x16"
+        url: "/favicon.ico",
+        type: "image/x-icon",
+        sizes: "32x32"
       }
     ],
     apple: [
       {
-        url: "/images/idevibelogo.png",
-        type: "image/png",
+        url: "/images/logo-m.svg",
+        type: "image/svg+xml",
         sizes: "180x180"
       }
     ],
-    shortcut: [{ url: "/images/idevibelogo.png" }],
+    shortcut: [{ url: "/images/logo-m.svg" }],
     other: [
       {
         rel: "icon",
-        url: "/images/idevibelogo.png",
+        url: "/images/logo-m.svg",
       },
     ],
   },
@@ -66,9 +66,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/idevibelogo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/idevibelogo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/idevibelogo.png" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo-m.svg" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${inter.className} bg-[#f8f5ee] text-neutral-900 min-h-screen flex flex-col`}>
