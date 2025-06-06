@@ -25,7 +25,7 @@ export default function Page() {
         <h1 className="text-2xl md:text-3xl font-extrabold mb-1 text-neutral-900">Mischa Mez</h1>
         <h2 className="text-sm md:text-base font-medium text-neutral-500 mb-2">MSc Robotics @ EPFL | Neuro-X Minor</h2>
         <p className="max-w-xl mx-auto text-base text-neutral-700 mb-5">
-          Motivated Master's student in Robotics with a Neuro-X minor at EPFL, passionate about neuroscience, biomedical imaging, and robotics engineering. Bridging technology and medicine through innovative research and hands-on engineering.
+          Motivated Master&apos;s student in Robotics with a Neuro-X minor at EPFL, passionate about neuroscience, biomedical imaging, and robotics engineering. Bridging technology and medicine through innovative research and hands-on engineering.
         </p>
         <IconBar />
       </section>

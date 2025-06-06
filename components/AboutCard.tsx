@@ -20,7 +20,7 @@ export default function AboutCard() {
       />
       <h1 className="text-3xl font-bold mb-4 text-slate-800">About Me</h1>
       <p className="text-lg text-slate-700 mb-8 text-center">
-        <span className="text-3xl mr-2 align-middle">👋</span>Hi! I'm Mischa Mez, a passionate Master's student in Robotics at EPFL with a strong interdisciplinary background in neuroscience, biomedical imaging, and AI. I thrive at the intersection of technology and healthcare, and I'm driven by the desire to create impactful solutions for real-world medical challenges. My studies and projects have given me hands-on experience in neuroengineering, signal processing, and robotics, and I am eager to contribute my skills to advance healthcare innovation.
+        <span className="text-3xl mr-2 align-middle">👋</span>Hi! I&apos;m Mischa Mez, a passionate Master&apos;s student in Robotics at EPFL with a strong interdisciplinary background in neuroscience, biomedical imaging, and AI. I thrive at the intersection of technology and healthcare, and I&apos;m driven by the desire to create impactful solutions for real-world medical challenges. My studies and projects have given me hands-on experience in neuroengineering, signal processing, and robotics, and I am eager to contribute my skills to advance healthcare innovation.
       </p>
       <div className="w-full flex flex-col gap-6">
         <div className="py-5 px-4 rounded-xl bg-white/80 shadow-sm border border-slate-200 mb-2">

@@ -9,44 +9,36 @@ export default function ContactPage() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [website, setWebsite] = useState('');
-  const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState('');
-  const [error, setError] = useState('');
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setLoading(true);
-    setSuccess('');
-    setError('');
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, message, website }),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setSuccess('Your message has been sent!');
-        setName('');
-        setEmail('');
-        setMessage('');
-        setWebsite('');
-      } else {
-        setError(data.error || 'Something went wrong. Please try again.');
-      }
-    } catch (err) {
-      setError('Something went wrong. Please try again.');
-    } finally {
-      setLoading(false);
+    // Honeypot check
+    if (website) {
+      return;
     }
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(`New message from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+    const mailtoLink = `mailto:mischa.mez@epfl.ch?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+    
+    // Show success message
+    setSuccess('Your email client should open now. If not, please email me directly at mischa.mez@epfl.ch');
+    setName('');
+    setEmail('');
+    setMessage('');
   }
 
   return (
     <main className="flex flex-col items-center min-h-screen px-4 py-12 bg-[#f8f5ee]">
       <section className="w-full max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4">Let's Talk</h1>
+        <h1 className="text-4xl font-extrabold mb-4">Let&apos;s Talk</h1>
         <p className="text-lg text-gray-600 mb-8">
-          I'm actively seeking opportunities to apply my knowledge in neuroscience and robotics to real-world challenges. If you're looking for a motivated student for internships, thesis collaborations, or have exciting projects to discuss, I'd love to hear from you.
+          I&apos;m actively seeking opportunities to apply my knowledge in neuroscience and robotics to real-world challenges. If you&apos;re looking for a motivated student for internships, thesis collaborations, or have exciting projects to discuss, I&apos;d love to hear from you.
         </p>
         <form className="bg-white rounded-xl shadow p-8 mb-10 flex flex-col gap-4" onSubmit={handleSubmit} autoComplete="off">
           <input
@@ -87,14 +79,12 @@ export default function ContactPage() {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="bg-neutral-900 text-white font-bold px-8 py-3 rounded-full text-lg shadow hover:bg-neutral-800 transition disabled:opacity-60"
-              disabled={loading}
+              className="bg-neutral-900 text-white font-bold px-8 py-3 rounded-full text-lg shadow hover:bg-neutral-800 transition"
             >
-              {loading ? 'Sending...' : 'Submit'}
+              Send Email
             </button>
           </div>
           {success && <div className="text-green-600 font-medium mt-2">{success}</div>}
-          {error && <div className="text-red-600 font-medium mt-2">{error}</div>}
         </form>
       </section>
       <IconBar />
