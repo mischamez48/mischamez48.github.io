@@ -23,28 +23,28 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon.svg",
+        url: "/favicon.svg?v=2",
         type: "image/svg+xml",
         sizes: "any"
       },
       {
-        url: "/favicon.ico",
+        url: "/favicon.ico?v=2",
         type: "image/x-icon",
         sizes: "32x32"
       }
     ],
     apple: [
       {
-        url: "/images/logo-m.svg",
+        url: "/images/logo-m.svg?v=2",
         type: "image/svg+xml",
         sizes: "180x180"
       }
     ],
-    shortcut: [{ url: "/images/logo-m.svg" }],
+    shortcut: [{ url: "/images/logo-m.svg?v=2" }],
     other: [
       {
         rel: "icon",
-        url: "/images/logo-m.svg",
+        url: "/images/logo-m.svg?v=2",
       },
     ],
   },
@@ -66,9 +66,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo-m.svg" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo-m.svg?v=2" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${inter.className} bg-[#f8f5ee] text-neutral-900 min-h-screen flex flex-col`}>
