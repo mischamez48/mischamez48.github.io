@@ -58,7 +58,7 @@ const mentionableProjects: ProjectData[] = [
   {
     icon: 'lungs',
     title: 'Dielectric Elastomer Actuator for Respiratory Assistance',
-    subtitle: 'EPFL | Translational NeuroEngineering',
+    subtitle: 'EPFL | Translational neuroengineering - NX-423',
     description:
       'Advanced respiratory assistance system for ALS patients using dielectric elastomer actuators, combining biomedical engineering with innovative actuation technology.',
     highlights: [
@@ -74,7 +74,7 @@ const mentionableProjects: ProjectData[] = [
   {
     icon: '🍫',
     title: 'Chocolate Recognition Project',
-    subtitle: 'IAPR 2025 | Image Analysis and Pattern Recognition',
+    subtitle: 'EPFL | Image analysis and pattern recognition - EE-451',
     description:
       'Computer vision project for detecting and classifying 13 different types of chocolates using deep learning techniques with a two-stage approach.',
     highlights: [
@@ -90,7 +90,7 @@ const mentionableProjects: ProjectData[] = [
   {
     icon: '🧠',
     title: 'Neural Signal and Signal Processing',
-    subtitle: 'EPFL | Computational Neuroscience',
+    subtitle: 'EPFL | Neural signals and signal processing - NX-421',
     description:
       'Comprehensive neural signal processing project with three miniprojects covering foundational to advanced techniques in computational neuroscience.',
     highlights: [
@@ -106,7 +106,7 @@ const mentionableProjects: ProjectData[] = [
   {
     icon: '😡',
     title: 'Hate Speech Detection with Emojis',
-    subtitle: 'EPFL | Natural Language Processing',
+    subtitle: 'EPFL | Deep learning - EE-559',
     description:
       'Advanced NLP project focusing on hate speech detection in social media content, incorporating emoji analysis for enhanced classification accuracy.',
     highlights: [
@@ -122,7 +122,7 @@ const mentionableProjects: ProjectData[] = [
   {
     icon: '🧠',
     title: 'Computational Neuroscience: Hopfield Networks',
-    subtitle: 'EPFL | Computational Neuroscience',
+    subtitle: 'EPFL | Computational neurosciences: neuronal dynamics - NX-465',
     description:
       'Implementation and analysis of Hopfield neural networks as associative memory models, exploring their applications in computational neuroscience.',
     highlights: [
