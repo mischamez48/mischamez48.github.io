@@ -60,15 +60,14 @@ const mentionableProjects: ProjectData[] = [
     title: 'Dielectric Elastomer Actuator for Respiratory Assistance',
     subtitle: 'EPFL | Translational neuroengineering - NX-423',
     description:
-      'Developed a novel dielectric elastomer actuator system designed to provide respiratory assistance for ALS patients experiencing muscle weakness and breathing difficulties. The project involved creating a MATLAB-based control system that could adapt to different breathing patterns and provide personalized respiratory support.',
+      'Developed a novel dielectric elastomer actuator system designed to provide respiratory assistance for ALS patients experiencing muscle weakness and breathing difficulties. The project involved creating a MATLAB-based simulation for optimal actuator design.',
     highlights: [
       'Medical device engineering for ALS patient care',
-      'MATLAB control system development',
-      'Dielectric elastomer actuator design',
+      'Dielectric elastomer actuator design with MATLAB',
       'Respiratory pattern analysis and adaptation',
       'Biomedical signal processing',
     ],
-    outcome: 'Successfully designed and simulated a responsive respiratory assistance system with potential for clinical application in ALS care.',
+    outcome: 'Successfully designed and simulated a DEA-based system with potential for clinical application in ALS care.',
     extra: 'Focus on improving quality of life for patients with neurodegenerative diseases.',
   },
   {
@@ -85,7 +84,7 @@ const mentionableProjects: ProjectData[] = [
     ],
     outcome:
       'Successfully implemented end-to-end chocolate recognition system with segmentation and classification achieving high accuracy on test data.',
-    extra: 'Team collaboration: Mischa Mez, Mathieu Sanchez, Zaynab Hajroun',
+    extra: "Implemented a complete DL pipeline for chocolate recognition with segmentation and classification.",
   },
   {
     icon: '🧠',
