@@ -144,9 +144,9 @@ export default function ProjectsPage() {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 sm:mb-8 lg:mb-10 text-center text-neutral-900">Major Projects</h1>
         
         {/* Semester Projects */}
-        <div className="mb-12">
-          <h2 className="text-xl sm:text-2xl font-bold mb-6 text-neutral-800 border-b-2 border-neutral-300 pb-2">Semester Projects</h2>
-          <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 lg:grid-cols-2 items-start">
+        <div className="mb-16">
+          <h2 className="text-xl sm:text-2xl font-bold mb-8 text-neutral-800 border-b-2 border-neutral-300 pb-2">Semester Projects</h2>
+          <div className="grid gap-6 sm:gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-2 items-stretch">
             {semesterProjects.map((project, idx) => (
               <ProjectCard key={project.title} project={project} idx={idx} />
             ))}
@@ -156,9 +156,9 @@ export default function ProjectsPage() {
 
 
         {/* Mentionable Projects */}
-        <div className="mb-12">
-          <h2 className="text-xl sm:text-2xl font-bold mb-6 text-neutral-800 border-b-2 border-neutral-300 pb-2">Mentionable Projects</h2>
-          <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 lg:grid-cols-2 items-start">
+        <div className="mb-16">
+          <h2 className="text-xl sm:text-2xl font-bold mb-8 text-neutral-800 border-b-2 border-neutral-300 pb-2">Mentionable Projects</h2>
+          <div className="grid gap-6 sm:gap-8 lg:gap-10 grid-cols-1 lg:grid-cols-2 items-stretch">
             {mentionableProjects.map((project, idx) => (
               <ProjectCard key={project.title} project={project} idx={idx} />
             ))}
