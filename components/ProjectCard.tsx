@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import React from 'react';
-import Image from 'next/image';
+import LungsIcon from './icons/LungsIcon';
 
 export interface ProjectData {
   icon: string;
@@ -15,17 +15,11 @@ export interface ProjectData {
 
 // Component to render either emoji or SVG icon
 function ProjectIcon({ icon }: { icon: string }) {
-  // Check if the icon is a path to an SVG file
-  if (icon.endsWith('.svg')) {
+  // Check if the icon is the lungs icon
+  if (icon === 'lungs') {
     return (
       <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center">
-        <Image
-          src={icon}
-          alt="Project icon"
-          width={28}
-          height={28}
-          className="w-full h-full"
-        />
+        <LungsIcon width={28} height={28} />
       </div>
     );
   }
