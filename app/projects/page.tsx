@@ -19,6 +19,86 @@ const projects: ProjectData[] = [
     extra: 'Design and development of a humanoid facial robot.',
   },
   {
+    icon: '🫁',
+    title: 'Dielectric Elastomer Actuator for Respiratory Assistance',
+    subtitle: 'EPFL | Translational NeuroEngineering',
+    description:
+      'Advanced respiratory assistance system for ALS patients using dielectric elastomer actuators, combining biomedical engineering with innovative actuation technology.',
+    highlights: [
+      'MATLAB strain vs voltage analysis',
+      'Displacement matrix calculations',
+      'Biomedical device design for ALS patients',
+      'Comprehensive technical documentation',
+    ],
+    outcome:
+      'Developed functional DEA-based respiratory assistance prototype with detailed performance analysis and technical documentation.',
+    extra: 'Innovative approach to respiratory assistance using smart materials.',
+  },
+  {
+    icon: '🍫',
+    title: 'Chocolate Recognition Project',
+    subtitle: 'IAPR 2025 | Image Analysis and Pattern Recognition',
+    description:
+      'Computer vision project for detecting and classifying 13 different types of chocolates using deep learning techniques with a two-stage approach.',
+    highlights: [
+      'Attention U-Net segmentation model',
+      'Feature extractor for 13 chocolate classes',
+      'PyTorch, OpenCV, NumPy implementation',
+      'Complete ML pipeline with Kaggle submission format',
+    ],
+    outcome:
+      'Successfully implemented end-to-end chocolate recognition system with segmentation and classification achieving high accuracy on test data.',
+    extra: 'Team collaboration: Mischa Mez, Mathieu Sanchez, Zaynab Hajroun',
+  },
+  {
+    icon: '🧠',
+    title: 'Neural Signal and Signal Processing',
+    subtitle: 'EPFL | Computational Neuroscience',
+    description:
+      'Comprehensive neural signal processing project with three miniprojects covering foundational to advanced techniques in computational neuroscience.',
+    highlights: [
+      'Statistical analysis and data visualization',
+      'Neural decoding with machine learning',
+      'Real neural data processing and analysis',
+      'Python, MATLAB, SciPy, Scikit-learn implementation',
+    ],
+    outcome:
+      'Completed comprehensive analysis of neural signals with advanced signal processing techniques and machine learning approaches.',
+    extra: 'Three-part miniproject series in computational neuroscience.',
+  },
+  {
+    icon: '😡',
+    title: 'Hate Speech Detection with Emojis',
+    subtitle: 'EPFL | Natural Language Processing',
+    description:
+      'Advanced NLP project focusing on hate speech detection in social media content, incorporating emoji analysis for enhanced classification accuracy.',
+    highlights: [
+      'Emoji integration in text classification',
+      'Advanced NLP techniques for social media',
+      'Hate speech detection algorithms',
+      'Social media data analysis',
+    ],
+    outcome:
+      'Developed robust hate speech detection system incorporating emoji semantics for improved social media content classification.',
+    extra: 'Novel approach combining traditional NLP with emoji analysis.',
+  },
+  {
+    icon: '🔗',
+    title: 'Computational Neuroscience: Hopfield Networks',
+    subtitle: 'EPFL | Computational Neuroscience',
+    description:
+      'Implementation and analysis of Hopfield neural networks as associative memory models, exploring their applications in computational neuroscience.',
+    highlights: [
+      'Associative memory model implementation',
+      'Neural network pattern recognition',
+      'Computational neuroscience applications',
+      'Memory storage and retrieval analysis',
+    ],
+    outcome:
+      'Successfully implemented and analyzed Hopfield networks demonstrating associative memory capabilities and pattern completion.',
+    extra: 'Classic neural network model with modern computational analysis.',
+  },
+  {
     icon: '🧠',
     title: 'Cognitive Neuroscience Research (Neuro-X Project II)',
     subtitle: 'Semester 3 | Grade: 5.5/6 | Center for Biomedical Imaging (CIBM), EPFL',
