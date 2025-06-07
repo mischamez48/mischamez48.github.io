@@ -56,7 +56,7 @@ const personalProjects: ProjectData[] = [
 
 const mentionableProjects: ProjectData[] = [
   {
-    icon: '🫁',
+    icon: '/icons/lungs.svg',
     title: 'Dielectric Elastomer Actuator for Respiratory Assistance',
     subtitle: 'EPFL | Translational NeuroEngineering',
     description:

@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import React from 'react';
+import Image from 'next/image';
 
 export interface ProjectData {
   icon: string;
@@ -10,6 +11,27 @@ export interface ProjectData {
   highlights: string[];
   outcome?: string;
   extra?: string;
+}
+
+// Component to render either emoji or SVG icon
+function ProjectIcon({ icon }: { icon: string }) {
+  // Check if the icon is a path to an SVG file
+  if (icon.endsWith('.svg')) {
+    return (
+      <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center">
+        <Image
+          src={icon}
+          alt="Project icon"
+          width={28}
+          height={28}
+          className="w-full h-full"
+        />
+      </div>
+    );
+  }
+  
+  // Otherwise, render as emoji
+  return <span className="text-2xl sm:text-3xl flex-shrink-0">{icon}</span>;
 }
 
 export default function ProjectCard({ project, idx }: { project: ProjectData; idx: number }) {
@@ -22,7 +44,7 @@ export default function ProjectCard({ project, idx }: { project: ProjectData; id
       className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-7 flex flex-col gap-2 sm:gap-3 border border-neutral-100 hover:shadow-2xl transition-shadow duration-300 w-full max-w-none"
     >
       <div className="flex items-start gap-3 mb-2">
-        <span className="text-2xl sm:text-3xl flex-shrink-0">{project.icon}</span>
+        <ProjectIcon icon={project.icon} />
         <h2 className="text-lg sm:text-xl font-bold leading-tight break-words">{project.title}</h2>
       </div>
       <div className="text-xs sm:text-sm text-blue-700 font-medium mb-1 break-words">{project.subtitle}</div>
