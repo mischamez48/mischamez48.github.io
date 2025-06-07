@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import React from 'react';
-import Image from 'next/image';
 
 export interface ProjectData {
   icon: string;
@@ -19,13 +18,12 @@ function ProjectIcon({ icon }: { icon: string }) {
   if (icon === 'lungs') {
     return (
       <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center bg-gray-50 rounded">
-        <Image
-          src="/lung.png"
+        <img
+          src="/portfolio/lung.png"
           alt="Lungs icon"
           width={28}
           height={28}
           className="w-full h-full object-contain"
-          priority
         />
       </div>
     );
