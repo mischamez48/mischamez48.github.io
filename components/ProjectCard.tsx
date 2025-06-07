@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import React, { useState } from 'react';
+import React from 'react';
 
 export interface ProjectData {
   icon: string;
@@ -14,66 +14,26 @@ export interface ProjectData {
 
 // Component to render either emoji or custom icon
 function ProjectIcon({ icon }: { icon: string }) {
-  const [imageError, setImageError] = useState(false);
-  const [imagePaths] = useState([
-    '/portfolio/lung.png',
-    '/lung.png',
-    './lung.png',
-    'lung.png'
-  ]);
-  const [currentPathIndex, setCurrentPathIndex] = useState(0);
-  
-  // Debug log to see what icon value we're receiving
-  console.log('ProjectIcon received icon:', icon, 'type:', typeof icon);
-  
   // Check if the icon is the lungs icon
   if (icon === 'lungs') {
-    console.log('Rendering lungs icon');
-    
-    const handleImageError = () => {
-      console.error('Image failed to load at path:', imagePaths[currentPathIndex]);
-      if (currentPathIndex < imagePaths.length - 1) {
-        setCurrentPathIndex(currentPathIndex + 1);
-      } else {
-        setImageError(true);
-      }
-    };
-    
-    if (imageError) {
-      // Fallback to text/emoji if all image paths fail
-      return (
-        <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center bg-red-100 rounded border-2 border-red-200">
-          <span className="text-xs text-red-600 font-bold">🫁</span>
-        </div>
-      );
-    }
-    
     return (
-      <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center bg-blue-50 rounded border">
+      <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center">
         <img
-          src={imagePaths[currentPathIndex]}
+          src="/portfolio/lungs.svg"
           alt="Lungs icon"
           width={28}
           height={28}
           className="w-full h-full object-contain"
-          onLoad={() => console.log('Lung image loaded successfully from:', imagePaths[currentPathIndex])}
-          onError={handleImageError}
         />
       </div>
     );
   }
-  
-  // Debug for other icons
-  console.log('Rendering emoji icon:', icon);
   
   // Otherwise, render as emoji
   return <span className="text-2xl sm:text-3xl flex-shrink-0">{icon}</span>;
 }
 
 export default function ProjectCard({ project, idx }: { project: ProjectData; idx: number }) {
-  // Debug log to see the project data
-  console.log('ProjectCard rendering:', project.title, 'with icon:', project.icon);
-  
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
