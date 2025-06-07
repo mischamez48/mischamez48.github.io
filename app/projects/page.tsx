@@ -36,7 +36,9 @@ const semesterProjects: ProjectData[] = [
   },
 ];
 
-const personalProjects: ProjectData[] = [
+
+
+const mentionableProjects: ProjectData[] = [
   {
     icon: '👁️',
     title: 'AI-Driven Glaucoma Screening',
@@ -53,24 +55,21 @@ const personalProjects: ProjectData[] = [
     outcome: 'Deployed a transparent, AI-driven diagnostic system with strong accuracy and potential for uncovering novel glaucoma biomarkers.',
     extra: 'Confidential project - details limited by non-disclosure agreement.',
   },
-];
-
-const mentionableProjects: ProjectData[] = [
   {
     icon: 'lungs',
     title: 'Dielectric Elastomer Actuator for Respiratory Assistance',
     subtitle: 'EPFL | Translational neuroengineering - NX-423',
     description:
-      'Advanced respiratory assistance system for ALS patients using dielectric elastomer actuators, combining biomedical engineering with innovative actuation technology.',
+      'Developed a novel dielectric elastomer actuator system designed to provide respiratory assistance for ALS patients experiencing muscle weakness and breathing difficulties. The project involved creating a MATLAB-based control system that could adapt to different breathing patterns and provide personalized respiratory support.',
     highlights: [
-      'MATLAB strain vs voltage analysis',
-      'Displacement matrix calculations',
-      'Biomedical device design for ALS patients',
-      'Comprehensive technical documentation',
+      'Medical device engineering for ALS patient care',
+      'MATLAB control system development',
+      'Dielectric elastomer actuator design',
+      'Respiratory pattern analysis and adaptation',
+      'Biomedical signal processing',
     ],
-    outcome:
-      'Developed functional DEA-based respiratory assistance prototype with detailed performance analysis and technical documentation.',
-    extra: 'Innovative approach to respiratory assistance using smart materials.',
+    outcome: 'Successfully designed and simulated a responsive respiratory assistance system with potential for clinical application in ALS care.',
+    extra: 'Focus on improving quality of life for patients with neurodegenerative diseases.',
   },
   {
     icon: '🍫',
@@ -154,15 +153,7 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        {/* Personal Projects */}
-        <div className="mb-12">
-          <h2 className="text-xl sm:text-2xl font-bold mb-6 text-neutral-800 border-b-2 border-neutral-300 pb-2">Personal Projects</h2>
-          <div className="grid gap-4 sm:gap-6 lg:gap-8 grid-cols-1 lg:grid-cols-2 items-start">
-            {personalProjects.map((project, idx) => (
-              <ProjectCard key={project.title} project={project} idx={idx} />
-            ))}
-          </div>
-        </div>
+
 
         {/* Mentionable Projects */}
         <div className="mb-12">
