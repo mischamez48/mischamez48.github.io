@@ -19,38 +19,6 @@ const semesterProjects: ProjectData[] = [
     extra: 'Design and development of a humanoid facial robot.',
   },
   {
-    icon: '🫁',
-    title: 'Dielectric Elastomer Actuator for Respiratory Assistance',
-    subtitle: 'EPFL | Translational NeuroEngineering',
-    description:
-      'Advanced respiratory assistance system for ALS patients using dielectric elastomer actuators, combining biomedical engineering with innovative actuation technology.',
-    highlights: [
-      'MATLAB strain vs voltage analysis',
-      'Displacement matrix calculations',
-      'Biomedical device design for ALS patients',
-      'Comprehensive technical documentation',
-    ],
-    outcome:
-      'Developed functional DEA-based respiratory assistance prototype with detailed performance analysis and technical documentation.',
-    extra: 'Innovative approach to respiratory assistance using smart materials.',
-  },
-  {
-    icon: '🍫',
-    title: 'Chocolate Recognition Project',
-    subtitle: 'IAPR 2025 | Image Analysis and Pattern Recognition',
-    description:
-      'Computer vision project for detecting and classifying 13 different types of chocolates using deep learning techniques with a two-stage approach.',
-    highlights: [
-      'Attention U-Net segmentation model',
-      'Feature extractor for 13 chocolate classes',
-      'PyTorch, OpenCV, NumPy implementation',
-      'Complete ML pipeline with Kaggle submission format',
-    ],
-    outcome:
-      'Successfully implemented end-to-end chocolate recognition system with segmentation and classification achieving high accuracy on test data.',
-    extra: 'Team collaboration: Mischa Mez, Mathieu Sanchez, Zaynab Hajroun',
-  },
-  {
     icon: '🧠',
     title: 'Cognitive Neuroscience Research (Neuro-X Project II)',
     subtitle: 'Semester 3 | Grade: 5.5/6 | Center for Biomedical Imaging (CIBM), EPFL',
@@ -87,6 +55,38 @@ const personalProjects: ProjectData[] = [
 ];
 
 const mentionableProjects: ProjectData[] = [
+  {
+    icon: '🫁',
+    title: 'Dielectric Elastomer Actuator for Respiratory Assistance',
+    subtitle: 'EPFL | Translational NeuroEngineering',
+    description:
+      'Advanced respiratory assistance system for ALS patients using dielectric elastomer actuators, combining biomedical engineering with innovative actuation technology.',
+    highlights: [
+      'MATLAB strain vs voltage analysis',
+      'Displacement matrix calculations',
+      'Biomedical device design for ALS patients',
+      'Comprehensive technical documentation',
+    ],
+    outcome:
+      'Developed functional DEA-based respiratory assistance prototype with detailed performance analysis and technical documentation.',
+    extra: 'Innovative approach to respiratory assistance using smart materials.',
+  },
+  {
+    icon: '🍫',
+    title: 'Chocolate Recognition Project',
+    subtitle: 'IAPR 2025 | Image Analysis and Pattern Recognition',
+    description:
+      'Computer vision project for detecting and classifying 13 different types of chocolates using deep learning techniques with a two-stage approach.',
+    highlights: [
+      'Attention U-Net segmentation model',
+      'Feature extractor for 13 chocolate classes',
+      'PyTorch, OpenCV, NumPy implementation',
+      'Complete ML pipeline with Kaggle submission format',
+    ],
+    outcome:
+      'Successfully implemented end-to-end chocolate recognition system with segmentation and classification achieving high accuracy on test data.',
+    extra: 'Team collaboration: Mischa Mez, Mathieu Sanchez, Zaynab Hajroun',
+  },
   {
     icon: '🧠',
     title: 'Neural Signal and Signal Processing',
