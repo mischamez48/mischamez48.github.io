@@ -16,7 +16,8 @@ export default function AboutCard() {
       <img
         src="/portfolio/profile.png"
         alt="Mischa Mez"
-        className="w-24 h-24 sm:w-32 sm:h-32 rounded-full shadow-lg border-4 border-white -mt-12 sm:-mt-16 mb-4 object-cover bg-white"
+        className="w-24 h-24 sm:w-32 sm:h-32 rounded-full shadow-lg border-4 border-white -mt-12 sm:-mt-16 mb-4 object-cover bg-white antialiased"
+        style={{imageRendering: 'auto', WebkitFontSmoothing: 'antialiased', MozOsxFontSmoothing: 'grayscale'}}
       />
       <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-slate-800 text-center">About Me</h1>
       <p className="text-base sm:text-lg text-slate-700 mb-6 sm:mb-8 text-center leading-relaxed">
