@@ -5,9 +5,9 @@ import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 const education = [
   {
     icon: <FaGraduationCap />,
-    title: 'Master in Robotics (Currently Semester 3)',
+    title: 'Master in Robotics',
     subtitle: 'École Polytechnique Fédérale de Lausanne (EPFL) | Minor in Neuro-X',
-    description: 'Expected completion: 2025',
+    description: 'Expected completion: 2026',
     color: 'bg-blue-600',
   },
   {
