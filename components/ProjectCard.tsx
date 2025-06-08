@@ -19,7 +19,7 @@ function ProjectIcon({ icon }: { icon: string }) {
     return (
       <div className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 flex items-center justify-center">
         <img
-          src="/portfolio/lungs.svg"
+          src="/lungs.svg"
           alt="Lungs icon"
           width={28}
           height={28}

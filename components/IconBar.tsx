@@ -6,7 +6,7 @@ import { useState } from 'react';
 const ICONS = [
   { href: 'mailto:mischa.mez@epfl.ch', icon: FaEnvelope, label: 'Email' },
   { href: 'https://www.linkedin.com/in/mischa-mez-7944122a0', icon: FaLinkedin, label: 'LinkedIn', newTab: true },
-  { href: '/portfolio/CV_angl.pdf', icon: FiFileText, label: 'Download CV', newTab: true },
+  { href: '/CV_angl.pdf', icon: FiFileText, label: 'Download CV', newTab: true },
   { href: 'https://github.com/mischamez48', icon: FaGithub, label: 'GitHub', newTab: true },
 ];
 
