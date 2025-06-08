@@ -45,13 +45,7 @@ const mentionableProjects: ProjectData[] = [
     subtitle: 'April 2025 | Lemanic Life Sciences Hackathon 2025',
     description:
       'Built an AI-based glaucoma screening system using fundus photography, focusing on early detection, model interpretability, and biomarker discovery. Leveraged Vision Transformers (ViT) and attention maps to identify subtle optic nerve and vascular changes, supporting explainable diagnostics and clinical trust. Extensive preprocessing (illumination normalization, vessel segmentation) improved image quality and feature visibility. The model explored correlations between imaging signs and disease severity, and highlighted vascular patterns potentially specific to glaucoma.',
-    highlights: [
-      'Interpretable deep learning (ViT + attention)',
-      'Fundus image processing for glaucoma markers',
-      'Ophthalmological AI for early, remote screening',
-      'Illumination normalization and vessel segmentation',
-      'Biomarker discovery and disease severity correlation',
-    ],
+    highlights: [],
     outcome: 'Deployed a transparent, AI-driven diagnostic system with strong accuracy and potential for uncovering novel glaucoma biomarkers.',
     extra: 'Confidential project - details limited by non-disclosure agreement.',
   },
