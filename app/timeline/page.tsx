@@ -27,6 +27,20 @@ const education = [
 const work = [
   {
     icon: <FaBriefcase />,
+    title: 'Master Thesis Intern - CSEM S.A',
+    subtitle: 'Mar 2026 - Aug 2026 (ongoing)',
+    description: 'Master thesis research in progress at CSEM S.A.',
+    color: 'bg-green-700',
+  },
+  {
+    icon: <FaBriefcase />,
+    title: 'Machine Learning Intern - Rolex',
+    subtitle: 'Aug 2025 - Feb 2026',
+    description: 'Developed machine learning solutions for detecting defects in manufactured components. Implemented data-driven approaches to enhance quality assurance.',
+    color: 'bg-green-600',
+  },
+  {
+    icon: <FaBriefcase />,
     title: 'CERN Science Gateway Guide',
     subtitle: 'Oct 2023 - Oct 2024',
     description: 'Educational visit organization, team leadership, science communication, public engagement',
